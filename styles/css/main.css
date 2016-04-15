@@ -1,0 +1,11 @@
+body {
+  background-color: #0099ff;
+  font-size: 16px; }
+
+.welcome {
+  font-size: 4em;
+  margin-top: -1em;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%; }
