@@ -8,4 +8,22 @@ body {
   position: absolute;
   text-align: center;
   top: 50%;
-  width: 100%; }
+  width: 100%;
+  /* FF 4-18 */
+  /* FF 19+ */
+  /* IE 10+ */ }
+  .welcome input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    outline: none;
+    text-align: center; }
+  .welcome input:focus::-webkit-input-placeholder {
+    color: transparent; }
+  .welcome input:focus:-moz-placeholder {
+    color: transparent; }
+  .welcome input:focus::-moz-placeholder {
+    color: transparent; }
+  .welcome input:focus:-ms-input-placeholder {
+    color: transparent; }

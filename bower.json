@@ -19,5 +19,8 @@
     "angular": "^1.5.4",
     "bootstrap": "^3.3.6",
     "bootstrap-sass": "^3.3.6"
+  },
+  "resolutions": {
+    "angular": "^1.5.4"
   }
 }
