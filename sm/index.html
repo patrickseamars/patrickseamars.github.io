@@ -9,43 +9,109 @@
 
 	 <style type="text/css" media="screen, print">
 		* { margin: 0; padding: 0; }
-		body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: whitesmoke; }
-		#Page-wrap { width: 800px; margin: 40px auto 60px; }
-		h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
-		h2 { font-size: 20px; margin: 6px 0 6px 0; position: relative; }
-		h2 p { font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
-		li {font-size: 14px;}
+		body {
+			font: 16px Helvetica, Sans-Serif;
+			line-height: 24px;
+			background: whitesmoke;
+		}
+		#Page-wrap {
+			width: 780px;
+			margin: 40px auto 60px;
+		}
+
+		#Objective {
+			width: 750px;
+			float: right;
+			text-align: left;
+		}
+
+		#ContactInfo {
+			display: flex;
+			padding-bottom: 10px;
+		}
+
+		#ContactInfo div {
+			flex: 1;
+			text-align: right;
+		}
+
+		#ContactInfo div span{
+			margin: 0 15px;
+		}
+		h1 {
+			padding: 0 0 14px 0;
+			font-size: 38px;
+			font-weight: bold;
+			letter-spacing: -2px;
+		}
+		h2 {
+			font-size: 18px;
+			margin: 4px 0;
+		}
+		h3 {
+			font-style: italic;
+			font-family: Helvetica;
+			font-size: 16px;
+			color: #3D3D3D;
+			font-weight: bold;
+		}
+
 		p { margin: 0 0 10px 0; }
-		a { color: #999; text-decoration: none; }
-		a:hover { border-bottom-style: solid; color: black; }
-		ul { margin: 0 0 20px 17px; }
-		#Objective { width: 750px; float: right; text-align: center; }
-		#Objective p { font-family: Georgia, Serif; font-style: italic; font-size: 14px; color: #666; }
-		dt { font-style: italic; font-weight: bold; font-size: 16px; text-align: right; padding: 0 26px 0 0; width: 125px; float: left; height: 80px; border-right: 1px solid #999;  }
-		dd { width: 625px; float: right; }
-		dd.clear { float: none; margin: 0; height: 15px; }
+		a {
+			color: #999;
+			text-decoration: none;
+		}
+		a:hover {
+			border-bottom-style: solid;
+			color: black;
+		}
+		ul {
+			margin: 0 0 16px 14px;
+			width: 80%;
+		}
+		li { font-size: 12px; }
+
+		.soft-words {
+			font-family: Georgia, Serif;
+			font-style: italic;
+			font-size: 14px;
+			color: #666;
+		}
+		dt {
+			font-style: italic;
+			font-weight: bold;
+			font-size: 14px;
+			text-align: right;
+			padding: 0 22px 0 0;
+			width: 122px;
+			float: left;
+		}
+		dd {
+			border-left: 1px solid #ddd;
+			padding-left: 20px;
+			width: 610px;
+			float: right;
+		}
+		dd.clear {
+			float: none;
+			margin: 0;
+			height: 10px;
+		}
 		.clear { clear: both; }
-		#ContactInfo { padding-bottom: 35px; }
-		.stack {display: inline-block; height: 20px; width: 30%; font-size: 14px;}
+
+		.stack {
+			display: inline-block;
+			height: 20px;
+			width: 30%;
+			font-size: 12px;
+		}
 		.bold { font-weight: bold; }
-		.apps { width: 130px; height: 39px; }
-		.kapitall {color: #3fbfba; }
 		.snug { margin: 0; }
 		.inline { display: inline-block; }
 		.left { float: left; }
 		.right { float: right; }
 
-		@media print{
-			body{ font-size: 12pt; }
-			#page-wrap { width: 800px; margin: 10px auto 60px; }
-			h1 { margin-bottom: 5px; padding-bottom: 5px; }
-			#ContactInfo { padding-bottom: 15px; }
-			p { margin: 0 0 10px 0; }
-			ul { margin: 0 0 15px 17px; }
-			li {font-size: 12pt;}
-			h2 { font-size: 14pt; margin: 6px 0 0 0; }
-			.minor {font-size: 10pt;}
-			#Objective {display: none;}
+
 		}
 
 	 </style>
@@ -59,15 +125,15 @@
 
 			<h1>Patrick Seamars</h1>
 
-			<span>
-				<span class="left">Cell: 720-278-3744</span>
-				<span class="right">Email: <a class="email" href="mailto:patrick.seamars@gmail.com">patrick.seamars@gmail.com</a></span>
-			</span>
+			<div>
+				<span>Cell: <span class="soft-words">720-278-3744</span></span>
+				<span>Email: <a class="email" href="mailto:patrick.seamars@gmail.com">patrick.seamars@gmail.com</a></span>
+			</div>
 		</div>
 
 		<div id="Objective">
-			<p>
-				 A technically strong but people inclined Software Engineer, looking to make the transition to Scrum master. I am passionate about bringing teams together to allow for all individuals to shine. With experience as a professional programmer I understand the technology side, while keeping the big picture and processes in mind. Former teacher with excellent organizational and communication skills. Relationship driven leadership with a strong focus on helping all work to their strengths.
+			<p class="soft-words">
+				 A people inclined Software Engineer, looking to make the transition to Scrum master. I am passionate about bringing teams together to allow for all individuals to shine. With experience as a professional programmer I understand the technology side, while keeping the big picture and processes in mind. Former teacher with excellent organizational and communication skills. Relationship driven leadership with a strong focus on helping all work to their strengths.
 			</p>
 		</div>
 
@@ -76,12 +142,14 @@
 		<dl>
 			<dd class="clear"></dd>
 
-			<dt>Experience</dt>
+			<dt>
+					<h2>Experience</h2>
+				</dt>
 			<dd>
-				<h2>Software Engineer
-					<p class="snug"> Markit Digital, Boulder, Colorado</p>
-					<p class="snug">November 2015 - present</p>
-				</h2>
+				<h3>Software Engineer
+					<span class="snug soft-words right">November 2015 - present</span>
+				</h3>
+				<span class="snug soft-words"> Markit Digital, Boulder, Colorado</span>
 				<ul>
 					<li>Maintain and build features for online brokerage firm with over 30 million users</li>
 					<li>Facilitate working groups and meetings for internal teams</li>
@@ -89,20 +157,23 @@
 					<li>Develop documentation for several company initiatives, including new hire resources and technical documentation</li>
 				</ul>
 
-				<h2>Junior Web Developer
-					<p class="snug"> New Kapitall Holdings, LLC,  New York</p>
-					<p class="snug">November 2014 - August 2015</p>
-				</h2>
+				<h3>
+					Junior Web Developer
+					<span class="snug soft-words right">November 2014 - August 2015</span>
+				</h3>
+				<span class="snug soft-words"> New Kapitall Holdings, LLC,  New York</span>
+
 				<ul>
 					<li>Maintained and built features for an online brokerage stock trading and learning platform with more than 250,000 members</li>
 					<li>Maintained and built iOS and Android applications for educational finance games, working with PhoneGap, Java and jQuery</li>
 					<li>Worked closely with Marketing/Design to create responsive, pixel perfect html emails</li>
 				</ul>
 
-				<h2>Spanish and ELA-S Teacher
-					<p class="snug"> Manual High School,  Denver, Colorado </p>
-					<p class="snug">July 2012 - June 2014</p>
-				</h2>
+				<h3>
+					Spanish and ELA-S Teacher
+					<span class="snug soft-words right">July 2012 - June 2014</span>
+				</h3>
+				<span class="snug soft-words"> Manual High School,  Denver, Colorado </span>
 				<ul>
 					<li>Instructed Spanish Foreign Language, Spanish Heritage, and ELA-S ELD</li>
 					<li>Designed culturally responsive, engaging and standards-based curriculum </li>
@@ -113,24 +184,31 @@
 
 			<dd class="clear"></dd>
 
-			<dt>Education</dt>
+			<dt>
+					<h2>Education</h2>
+			</dt>
 			<dd>
-				<h2>Bachelor's of Arts
-					<p class="snug"> Metropolitan State University of Denver </p>
-					<p class="snug">2012</p>
-				</h2>
-				<p><strong>Major:</strong> Spanish<br />
-					 <strong>Minor:</strong> K-12 Education</p>
+				<h3>
+					Bachelor's of Arts
+					<span class="snug soft-words right">2012</span>
+				</h3>
+				<span class="snug soft-words"> Metropolitan State University of Denver </span>
+
+				<p><strong>Major:</strong> Spanish</p>
+				<p><strong>Minor:</strong> K-12 Education</p>
 			</dd>
 
 			<dd class="clear"></dd>
 
-      <dt>Certification</dt>
+      <dt>
+				<h2>Certification</h2>
+			</dt>
       <dd>
-        <h2>Professional Scrum Master I
-          <p class=" snug"> scrum.org </p>
-          <p class="snug">2018</p>
-        </h2>
+        <h3>
+					Professional Scrum Master I
+					<span class="snug soft-words right">2018</span>
+				</h3>
+				<span class="snug soft-words"> scrum.org </span>
       </dd>
 
       <dd class="clear"></dd>
